@@ -1,8 +1,11 @@
 import express from "express";
 import { scrapeAmazon } from "./scrape";
+import cors from "cors";
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 app.get("/api/scrape", async (req, res) => {
   const keyword = req.query.keyword as string;
