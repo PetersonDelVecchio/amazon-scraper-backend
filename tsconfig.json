@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true,
+    "target": "ES2020",            // Compila para JavaScript moderno
+    "module": "ESNext",            // ES Modules, compatível com Bun
+    "outDir": "./dist",            // Pasta de saída dos JS compilados
+    "rootDir": "./src",            // Pasta de origem dos TS
+    "strict": true,                // Ativa checagens rigorosas
+    "esModuleInterop": true,       // Para importar módulos CommonJS se necessário
+    "skipLibCheck": true,          // Ignora checagem de tipos de dependências
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
