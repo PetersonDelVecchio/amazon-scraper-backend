@@ -8,7 +8,7 @@ This project consists of a backend built with Bun + Express that scrapes Amazon 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/amazon-scraper-backend.git
+git clone https://github.com/PetersonDelVecchio/amazon-scraper-backend.git
 cd amazon-scraper-backend
 ```
 
